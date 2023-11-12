@@ -20,7 +20,7 @@
     <span th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Error</span>
     <br/>
     <label for="password">Password</label><br/>
-    <input id="password" type="text" th:field="*{password}"/>
+    <input id="password" type="password" th:field="*{password}"/>
     <span th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Error</span>
 
     <br/>

@@ -32,7 +32,7 @@ public class User implements UserDetails {
     @Pattern(regexp = "[A-Za-zА-Яа-я]{2,40}", message = "Только буквы в кол-ве от 2 до 40")
     private String surname;
 
-    @Size(min = 3, message = "Минимум 4 символа")
+    @Size(min = 3, message = "Минимум 3 символа")
     private String password = "$2y$10$RActNQEN6Lwglg5Wzd89me1UpHJfhJX7K6NMzdf87OevoVwrxb/2S";
 
     @NotEmpty(message = "Выбери роль")

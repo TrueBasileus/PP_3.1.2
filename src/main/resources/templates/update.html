@@ -19,6 +19,12 @@
    <label for="age">Age</label><br/>
    <input id="age" type="text" th:field="*{age}"/>
    <span th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Error</span>
+     <br/>
+     <label for="password">Password</label><br/>
+     <input id="password" type="text" th:field="*{password}"/>
+     <span th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Error</span>
+     <br/>
+     <input id="roles" type="hidden" th:field="*{roles}"/>
      <br/><br/>
    <input type="submit" value="Update">
  </form>
